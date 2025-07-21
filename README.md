@@ -1,29 +1,91 @@
-# Students-mental-health-EDA
-This project investigates the impact of various factors on students' mental health, aiming to provide insights into how different aspects of their environment, background, and academic context may contribute to mental well-being. By analyzing data on depression, anxiety, isolation, and future insecurity, this study seeks to identify patterns and trends that could inform targeted support measures and promote a healthier academic experience for students.
-# Table of Contents
-* Project Overview
-* Dataset
-* Results
-* Contributing
-* License
+# Students' Mental Health – Exploratory Data Analysis (EDA)
 
-# Project Overview
-This project provides an in-depth analysis of mental health metrics within various academic demographics, helping to visualize and understand the impact of educational contexts on mental well-being. We analyze the data by grouping it based on:
+This project investigates the impact of academic background, environment, and personal context on students' mental health. By analyzing key mental health indicators—depression, anxiety, isolation, and future insecurity—the study aims to uncover patterns and highlight groups that may require additional support or targeted interventions.
 
-* Degree Level (e.g., Undergraduate, Postgraduate)
-* Degree Major (various academic disciplines)
-* Each metric (depression, anxiety, isolation, and future insecurity) is summarized by statistical measures (sum, mean, min, max).
+## Table of Contents
 
-# Dataset
-* Mental Health Metrics: Depression, anxiety, isolation, and future insecurity.
-* Group Categories: degree_level and degree_major.
-* The dataset is aggregated to show the average values of each metric for each group, highlighting trends and variations.
+- Project Overview  
+- Dataset Description  
+- Methodology  
+- Results and Visualizations  
+- Key Insights  
+- How to Use  
+- Contributing  
+- License  
 
-# Results
-The project offers insights into how mental health metrics vary based on academic demographics. The heatmaps provide a visual representation of these differences, highlighting areas where specific groups may experience higher levels of depression, anxiety, etc.
+## Project Overview
 
-# Contributing
-Contributions are welcome! Please fork this repository and create a pull request for review.
+This exploratory data analysis focuses on understanding how students' mental health varies across different academic demographics. The primary objective is to identify potential risk groups and trends using descriptive statistics and visual tools.
 
-# License
-This project is licensed under the MIT License.
+We analyze the dataset using groupings such as:
+
+- Degree Level (e.g., Undergraduate, Postgraduate)
+- Degree Major (e.g., Engineering, Humanities, Social Sciences)
+
+Mental health metrics are evaluated using aggregated statistics (mean, sum, min, max) for each category.
+
+## Dataset Description
+
+The dataset includes the following fields:
+
+- `degree_level`: Academic standing of the student
+- `degree_major`: Field of study
+- `depression`: Self-reported level of depression
+- `anxiety`: Self-reported level of anxiety
+- `isolation`: Level of social isolation
+- `future_insecurity`: Concerns about future security or stability
+
+Each record corresponds to a student and contains anonymized data to protect identity.
+
+## Methodology
+
+- Cleaned and standardized the dataset for consistency
+- Grouped data based on academic categories
+- Computed summary statistics for each mental health metric
+- Used heatmaps and bar plots to visualize comparative trends
+- Focused on highlighting areas of concern for certain groups
+
+## Results and Visualizations
+
+The project includes several visualizations such as:
+
+- Heatmaps of average depression, anxiety, and isolation scores by major and degree level
+- Comparative bar charts to contrast mental health conditions between different academic groups
+
+These visualizations help pinpoint demographic areas with consistently higher mental health concerns.
+
+## Key Insights
+
+- Certain majors show a higher average of depression and anxiety compared to others
+- Postgraduate students tend to report higher future insecurity than undergraduates
+- Isolation levels vary significantly between academic disciplines, suggesting the importance of community factors
+
+These findings can be useful for campus counselors, education policymakers, and student support organizations.
+
+## How to Use
+
+To explore or reproduce this project:
+
+1. Clone the repository  
+2. Open the Jupyter Notebook file  
+3. Run all cells to see the analysis and visualizations  
+
+Python libraries used include:
+- `pandas`
+- `seaborn`
+- `matplotlib`
+
+## Contributing
+
+Contributions are welcome. To contribute:
+
+- Fork the repository  
+- Create a new branch for your feature or fix  
+- Submit a pull request for review  
+
+Please ensure that your changes are well-documented and consistent with the existing structure.
+
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this project with attribution.
+
